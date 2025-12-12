@@ -1,12 +1,15 @@
 package kr.co.bnk.board.controller;
 
+import kr.co.bnk.board.dto.BoardRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CrudController {
 
-    @GetMapping("/test")
-    public String test() {
-        return "ok";
+    @PostMapping
+    public void create(
+            @RequestBody BoardRequest boardRequest
+            ){
+
     }
 }
